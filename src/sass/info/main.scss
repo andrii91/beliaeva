@@ -17,6 +17,9 @@ body {
   position: relative;
   &.bottom {
     border-bottom: 1px solid #fad0c4;
+    h2.title {
+      margin-bottom: 50px;
+    }
     .head-img {
           transform: translateX(-60%);
     }
