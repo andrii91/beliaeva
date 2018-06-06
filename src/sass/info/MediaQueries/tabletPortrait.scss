@@ -1,0 +1,30 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+  @import '../mobile';
+  & {
+    .container {
+      max-width: 585px;
+    }
+    .head .bg:before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .form,
+    .timer {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .text-right {
+      text-align: center;
+    }
+    .instruments {
+      .title {
+        text-align: left;
+      }
+    }
+    .instruments-item {
+      min-width: 245px;
+    }
+  }
+}

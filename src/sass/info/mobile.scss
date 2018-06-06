@@ -1,0 +1,210 @@
+& {
+
+  .xs-first {
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+  .head {
+    text-align: center;
+  }
+  header,
+  footer {
+    overflow: hidden;
+  }
+  .head .col-xl-6 {
+    padding-top: 30px;
+  }
+  .head-item h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    br {
+      display: none;
+    }
+  }
+  .head-item {
+    margin-top: 25px;
+  }
+  .video iframe,
+  .video img.preview {
+    width: 100%;
+    height: 158px;
+  }
+  .video {
+    margin-bottom: 50px;
+  }
+  .head .bg {
+    padding-left: 15px;
+    padding-bottom: 50px;
+  }
+  .head-img {
+    display: none;
+  }
+  .position {
+    width: .7em;
+  }
+  .form {
+    padding: 60px 25px;
+  }
+  .biography .container {
+    padding: 50px 15px;
+  }
+  .biography-item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    br {
+      display: none;
+    }
+  }
+  .biography-img {
+    display: none;
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  .webinar_type-img {
+    text-align: center;
+    display: block;
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  .pr40 {
+    padding-right: 0;
+  }
+  h2.title {
+    font-family: "Playfair Display";
+    font-size: 25px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-align: center;
+    br {
+      display: none;
+    }
+  }
+  .programs-item {
+    text-align: center;
+  }
+  .programs {
+    padding: 50px 0;
+  }
+  .webinar_type .title {
+    margin-top: 0;
+    padding-left: 0;
+  }
+  .webinar_type {
+    br {
+      display: none;
+    }
+  }
+  .webinar_type-list {
+    margin: 20px 0;
+  }
+  .instruments {
+    padding: 50px 0;
+  }
+  .instruments-left {
+    padding-left: 0;
+    min-width: inherit;
+    br {
+      display: none;
+    }
+  }
+  .instruments-item {
+    padding-left: 0;
+    margin-top: 20px;
+    br {
+      display: none;
+    }
+  }
+  .pl109 {
+    margin-left: 0;
+    min-width: inherit;
+  }
+  .manual {
+    padding: 50px 0;
+    .col {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  .manual-video iframe,
+  .manual-video img {
+    width: 100%;
+  }
+  .manual-item {
+    padding-left: 0;
+  }
+  .manual .col:nth-child(2) {
+    padding-right: 15px;
+  }
+  .manual-item .title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .manual-item p {
+    padding-left: 0;
+    text-align: center;
+    br {
+      display: none;
+    }
+  }
+  .number {
+    padding: 50px 0;
+  }
+  .number:before {
+    font-size: 60px;
+  }
+  .number-item {
+    text-align: center;
+    br {
+      display: none;
+    }
+  }
+  .head.bottom .col-xl-6 {
+    padding-top: 50px;
+    br {
+      display: none;
+    }
+  }
+  .social {
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+  }
+  .webinar_type-list {
+    text-align: left;
+  }
+  .rezart-logo {
+    float: none;
+  }
+  .footer_bottom {
+    text-align: center;
+  }
+  .footer-list li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .head .bg:before,.biography .container:before {
+    right: inherit;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .form,
+  .timer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text-right {
+    text-align: center;
+  }
+
+}
