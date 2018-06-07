@@ -161,13 +161,16 @@
     }
   }
   .number {
-    padding: 50px 0;
+    padding: 0px 0 50px;
   }
   .number:before {
     display: none;
   }
   .number-item {
     text-align: center;
+    h3 {
+      line-height: 1;
+    }
     br {
       display: none;
     }
@@ -245,6 +248,10 @@
   }
   .manual:before {
     display: none;
+  }
+  
+  .biography-video iframe, .biography-video img {
+    width: 100%;
   }
 
 }
