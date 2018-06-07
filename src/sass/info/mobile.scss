@@ -95,6 +95,9 @@
   .webinar_type .title {
     margin-top: 0;
     padding-left: 0;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .webinar_type {
     br {
@@ -161,7 +164,7 @@
     padding: 50px 0;
   }
   .number:before {
-    font-size: 60px;
+    display: none;
   }
   .number-item {
     text-align: center;
@@ -203,12 +206,12 @@
   }
   .form,
   .timer {
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
   }
   .text-right {
     text-align: center;
-  } 
+  }
   .br {
     display: block;
   }
@@ -218,7 +221,7 @@
   }
   .order-btn {
     display: none;
-  } 
+  }
   .social li svg {
     width: 52px;
     height: 52px;
@@ -232,11 +235,16 @@
   }
   .footer-item ul {
     margin: 0 auto;
-    max-width: 395px; 
+    max-width: 395px;
   }
   .parallax_section {
     margin: 0 auto;
   }
-
+  .programs:before {
+    transform: rotate(90deg) translateY(-10%);
+  }
+  .manual:before {
+    display: none;
+  }
 
 }

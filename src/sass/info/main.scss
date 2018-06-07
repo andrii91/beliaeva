@@ -224,6 +224,7 @@ body {
     display: inline-block;
     text-align: center;
   margin-top: 30px;
+  margin-left: 30px;
     &:hover {
       color: #ffffff;
       background: #d11e5c;
@@ -277,7 +278,6 @@ body {
   position: relative;
   img, iframe {
     max-width: 558px;
-    width: 100%;
   }
   margin-bottom: 20px;
 }
@@ -531,7 +531,7 @@ b {
     content: "JULIA";
     color: #fbfbfb; 
     font-family: "Playfair Display";
-    font-size: 230px;
+    font-size: 205px;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;

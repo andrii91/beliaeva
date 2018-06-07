@@ -26,5 +26,18 @@
     .instruments-item {
       min-width: 245px;
     }
+    .programs:before {
+      right: inherit;
+      left: 0;
+      transform-origin: bottom center;
+      transform: rotate(90deg) translateY(40%);
+    }
+    .manual:before {
+      display: block;
+    }
+    .number:before {
+      display: block;
+      font-size: 150px;
+    }
   }
 }
