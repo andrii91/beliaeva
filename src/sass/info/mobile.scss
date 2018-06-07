@@ -31,7 +31,6 @@
   .video iframe,
   .video img.preview {
     width: 100%;
-    height: 158px;
   }
   .video {
     margin-bottom: 50px;
@@ -117,7 +116,10 @@
   }
   .instruments-item {
     padding-left: 0;
-    margin-top: 20px;
+    margin-top: 30px;
+    h5 {
+      margin-top: 15px;
+    }
     br {
       display: none;
     }
@@ -193,18 +195,45 @@
     margin: 10px 0;
   }
 
-  .head .bg:before,.biography .container:before {
+  .head .bg:before,
+  .biography .container:before {
     right: inherit;
     left: 50%;
     transform: translateX(-50%);
   }
   .form,
   .timer {
-    margin-left: auto;
+    margin-left: auto; 
     margin-right: auto;
   }
   .text-right {
     text-align: center;
+  } 
+  .br {
+    display: block;
   }
+  .xs-none {
+    display: none;
+
+  }
+  .order-btn {
+    display: none;
+  } 
+  .social li svg {
+    width: 52px;
+    height: 52px;
+  }
+  .footer p {
+    margin-top: 20px;
+  }
+  .head.bottom .head-item {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  .footer-item ul {
+    margin: 0 auto;
+    max-width: 395px;
+  }
+
 
 }

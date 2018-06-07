@@ -25,9 +25,9 @@ body {
     }
     .date {
       margin-bottom: 0px;
-    }
+    } 
     .head-item {
-      margin-top: 0;
+      margin-top: 50px;
     }
     .col-xl-6 {
     padding-top: 195px;
@@ -97,7 +97,7 @@ body {
   }
 }
 
-.play-btn {
+.play-btn, .head-play {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -159,34 +159,34 @@ body {
     &::-webkit-input-placeholder {
       color: #000000;
         text-indent: 0;
-        transition: text-indent .3s ease
+        transition: text-indent .7s ease
     }
 
     &:-moz-placeholder,
     &::-moz-placeholder {
         text-indent: 0;
-        transition: text-indent .3s ease
+        transition: text-indent .7s ease
     }
 
     &:-ms-input-placeholder {
         text-indent: 0;
-        transition: text-indent .3s ease
+        transition: text-indent .7s ease
     }
 
     &:focus::-webkit-input-placeholder {
         text-indent: 500px;
-        transition: text-indent .3s ease
+        transition: text-indent .7s ease
     }
 
     &:focus:-moz-placeholder,
     &:focus::-moz-placeholder {
         text-indent: 500px;
-        transition: text-indent .3s ease
+        transition: text-indent .7s ease
     }
 
     &:focus:-ms-input-placeholder {
         text-indent: 500px;
-        transition: text-indent .3s ease
+        transition: text-indent .7s ease
     }
   }
   button {
@@ -207,6 +207,27 @@ body {
       background: #d11e5c;
     }
   }
+}
+.order-btn {
+   background-color: #f85b91;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    padding: 20px 30px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.5s;
+    display: inline-block;
+    text-align: center;
+  margin-top: 30px;
+    &:hover {
+      color: #ffffff;
+      background: #d11e5c;
+    }
 }
 
 .timer {
@@ -295,8 +316,6 @@ body {
 .programs {
   padding: 120px 0;
   position: relative;
-  .container {
-    position: relative;
     &:before {
       content: 'julia beliaeva';
       height: 247px;
@@ -305,14 +324,16 @@ body {
       font-family: "Playfair Display - Black";
       font-size: 150px;
       font-weight: 900;
-      line-height: 140px;
+      line-height: 1;
       text-transform: uppercase;
       position: absolute;
-      top: 81px;
-      right: -247px;
+      top: 200px;
+      right: -80px;
       transform-origin: bottom center;
       transform: rotate(90deg);
     }
+  .container {
+    position: relative;
   }
 }
 
@@ -466,6 +487,9 @@ h2.title {
 
 }
 
+b {
+  font-weight: 700;
+}
 .instruments {
   padding: 85px 0 141px;
   .title {
@@ -501,6 +525,20 @@ h2.title {
 .manual {
   padding-top: 141px;
   padding-bottom: 80px;
+  position: relative;
+  &:before {
+    text-align: center;
+    content: "JULIA";
+    color: #fbfbfb; 
+    font-family: "Playfair Display";
+    font-size: 230px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    position: absolute;
+    top: -225px;
+    left: 3%;
+  }
   .col {
     &:nth-child(2) {
       padding-right: 0;
@@ -542,7 +580,7 @@ main {
     content: "beliaeva";
     color: #fbfbfb;
     font-family: "Playfair Display";
-    font-size: 280px;
+    font-size: 250px;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
@@ -686,4 +724,24 @@ background-color: #121212;
   position: relative;
   margin: 0 auto;
   padding: 5vw;
+}
+
+.modal {
+  display: none;
+}
+
+.parallax_section {
+  position: relative;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.logo {
+  max-width: 276px;
+  display: inline-block;
+  img {
+    width: 100%;
+  }
 }
