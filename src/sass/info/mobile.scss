@@ -88,7 +88,7 @@
   }
   .programs-item {
     text-align: center;
-  }  
+  }
   .programs {
     padding: 50px 0;
   }
@@ -222,9 +222,7 @@
     display: none;
 
   }
-  .order-btn {
-    display: none;
-  }
+
   .social li svg {
     width: 52px;
     height: 52px;
@@ -249,9 +247,27 @@
   .manual:before {
     display: none;
   }
-  
-  .biography-video iframe, .biography-video img {
+
+  .biography-video iframe,
+  .biography-video img {
     width: 100%;
   }
-
+  .footer.thx p {
+    text-align: center;
+  }
+  .success-item h1 {
+    color: #363636;
+    font-family: "Playfair Display";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 14px;
+  }
+  .success-item P {
+    font-size: 16px;
+  }
+  .order-btn {
+    font-size: 13px;
+    padding: 14px 30px;
+  }
 }
