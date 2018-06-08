@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
   var myDate = new Date();
 
@@ -74,6 +72,27 @@ $(document).ready(function () {
       });*/
   $(window).resize(function () {
     if ($(window).width() > 1200) {
+      var steps = 30;
+      var paralaxContainer = '.parallax_section';
+      var parallaxElements = $('.scroll-parallax').closest(paralaxContainer).find('.scroll-parallax');
+      var parallaxQuantity = parallaxElements.length;
+
+
+      $(window).on('scroll', function () {
+        window.requestAnimationFrame(function () {
+
+          for (var i = 0; i < parallaxQuantity; i++) {
+
+            var currentElement = parallaxElements.eq(i);
+            var scrolled = $(window).scrollTop();
+            var currentElementStep = currentElement.data('step') ? currentElement.data('step') : steps;
+            var containerPosition = currentElement.closest('.parallax_section').offset()['top'];
+            currentElement.css({
+              'transform': 'translate3d(0,' + (scrolled - containerPosition) * -(1 / currentElementStep) + 'px, 0)'
+            });
+          }
+        });
+      });
       $('.stop-parallax').addClass('scroll-parallax');
       $('.scroll-parallax').each(function () {
         $(this).parents('.parallax_section').css({
@@ -91,10 +110,7 @@ $(document).ready(function () {
       $('.scroll-parallax').each(function () {
         $(this).addClass('stop-parallax');
 
-        $(this).parents('.parallax_section').css({
-          'width': $(this).find('img').width(),
-          'height': $(this).find('img').height(),
-        })
+      
         $(this).css({
           "position": "static",
           "transition": "all .5s"
@@ -106,6 +122,27 @@ $(document).ready(function () {
   })
 
   if ($(window).width() > 1200) {
+    var steps = 30;
+    var paralaxContainer = '.parallax_section';
+    var parallaxElements = $('.scroll-parallax').closest(paralaxContainer).find('.scroll-parallax');
+    var parallaxQuantity = parallaxElements.length;
+
+
+    $(window).on('scroll', function () {
+      window.requestAnimationFrame(function () {
+
+        for (var i = 0; i < parallaxQuantity; i++) {
+
+          var currentElement = parallaxElements.eq(i);
+          var scrolled = $(window).scrollTop();
+          var currentElementStep = currentElement.data('step') ? currentElement.data('step') : steps;
+          var containerPosition = currentElement.closest('.parallax_section').offset()['top'];
+          currentElement.css({
+            'transform': 'translate3d(0,' + (scrolled - containerPosition) * -(1 / currentElementStep) + 'px, 0)'
+          });
+        }
+      });
+    });
 
     $('.scroll-parallax').each(function () {
       $(this).parents('.parallax_section').css({
@@ -120,40 +157,13 @@ $(document).ready(function () {
 
   } else {
     $('.scroll-parallax').each(function () {
-      $(this).parents('.parallax_section').css({
-        'width': $(this).find('img').width(),
-        'height': $(this).find('img').height(),
-      })
-      $(this).css({
-        "position": "static",
-        "transition": "all .5s"
-      })
+
       $(this).addClass('stop-parallax');
     })
     $('.stop-parallax').removeClass('scroll-parallax');
   }
 
-  var steps = 30;
-  var paralaxContainer = '.parallax_section';
-  var parallaxElements = $('.scroll-parallax').closest(paralaxContainer).find('.scroll-parallax');
-  var parallaxQuantity = parallaxElements.length;
 
-
-  $(window).on('scroll', function () {
-    window.requestAnimationFrame(function () {
-
-      for (var i = 0; i < parallaxQuantity; i++) {
-
-        var currentElement = parallaxElements.eq(i);
-        var scrolled = $(window).scrollTop();
-        var currentElementStep = currentElement.data('step') ? currentElement.data('step') : steps;
-        var containerPosition = currentElement.closest('.parallax_section').offset()['top'];
-        currentElement.css({
-          'transform': 'translate3d(0,' + (scrolled - containerPosition) * -(1 / currentElementStep) + 'px, 0)'
-        });
-      }
-    });
-  });
 
 
 
@@ -256,10 +266,10 @@ $(document).ready(function () {
     $('.submit').addClass('inactive');
     $('.submit').prop('disabled', true);
     var $form = $(this);
-    
-        $form.find('input[name="name"]').val($(this).find('input[name="entry.68528353"]').val());
-        $form.find('input[name="custom_phone"]').val($(this).find('input[name="entry.244111333"]').val());
-        $form.find('input[name="email"]').val($(this).find('input[name="entry.1864185794"]').val());
+
+    $form.find('input[name="name"]').val($(this).find('input[name="entry.68528353"]').val());
+    $form.find('input[name="custom_phone"]').val($(this).find('input[name="entry.244111333"]').val());
+    $form.find('input[name="email"]').val($(this).find('input[name="entry.1864185794"]').val());
 
 
     var $data = $form.find('input, textarea, select');

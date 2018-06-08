@@ -159,7 +159,7 @@
     br {
       display: none;
     }
-  }
+  } 
   .number {
     padding: 0px 0 50px;
   }
@@ -270,4 +270,11 @@
     font-size: 13px;
     padding: 14px 30px;
   }
+  .fancybox-slide {
+    padding: 0;
+  }
+  .success {
+        padding-top: 26.211047vw;
+    min-height: calc(100vh - 205px);
+}
 }
